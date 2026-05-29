@@ -2,7 +2,7 @@
 description: "Use when: gathering context before implementation, analyzing codebase structure, finding integration points, mapping dependencies, researching where a feature should go, preparing context for code changes, understanding how existing code works before modifying it"
 name: "Dev Researcher"
 tools: [read, search, edit]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "Claude Opus 4 (copilot)"
 argument-hint: "Describe the feature or change to research — what needs to be implemented"
 ---
 

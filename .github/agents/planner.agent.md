@@ -2,7 +2,7 @@
 description: "Use when: planning implementation steps, creating an implementation plan from a context report, breaking down a feature into ordered steps before coding, translating research findings into actionable instructions for an executor"
 name: "Dev Planner"
 tools: [read, search]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "Claude Opus 4 (copilot)"
 user-invocable: false
 argument-hint: "Provide the Context Report from Researcher + the task description"
 ---
