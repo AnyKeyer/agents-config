@@ -100,6 +100,7 @@ Instructions in `.github/instructions/` are automatically loaded when you work w
 | `python.instructions.md` | `**/*.py` |
 | `react.instructions.md` | `**/*.{tsx,jsx}` |
 | `testing.instructions.md` | `**/*.{test,spec}.*` |
+| `security.instructions.md` | `**/*` (all files) |
 
 ## Project Memory
 
