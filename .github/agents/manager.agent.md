@@ -46,25 +46,6 @@ Before doing anything else, classify the request using this table:
 | **Large** | Researcher → Planner → Executor → Critic (specialized sub-critics enabled) |
 | **Epic** | STOP — explain why it's Epic, propose how to split it, ask user to confirm before starting |
 
-## Full Pipeline Flow
-
-```
-[Manager] Classify complexity
-    ↓
-[Researcher]         ← skipped for Trivial
-    ↓ Context Report
-[Planner]            ← only for Medium and Large
-    ↓ Implementation Plan
-[Executor]           ← always (for code changes)
-    ↓ Implementation Report
-[Critic]             ← skipped for Trivial; specialized sub-critics only for Large
-    ↓
-  APPROVED?
-  YES → Done
-  NO  → [Executor] fixes → [Critic] re-reviews (max 3 loops)
-         Still failing after 3 loops → Escalate to user
-```
-
 ## Decision Table
 
 | Request type | Action |

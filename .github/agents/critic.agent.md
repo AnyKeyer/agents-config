@@ -69,16 +69,9 @@ Read the actual changed files (not just the Implementation Report — read the r
 - Are there any inconsistencies introduced between the changed files?
 - Was any existing code accidentally broken (check callers/consumers of changed functions)?
 
-### Step 5: Security Review (OWASP Top 10 focus)
+### Step 5: Security Review
 
-Check for:
-- **A01 – Broken Access Control**: Is auth/authorization logic still intact?
-- **A02 – Cryptographic Failures**: Are secrets hardcoded? Is sensitive data exposed?
-- **A03 – Injection**: SQL injection, command injection, template injection in new inputs?
-- **A04 – Insecure Design**: Any trust boundary violations?
-- **A05 – Security Misconfiguration**: Overly permissive configs introduced?
-- **A07 – Auth failures**: Session or token handling changed incorrectly?
-- **A09 – Logging**: Is sensitive data being logged?
+Check for injection (SQL/cmd/HTML), hardcoded secrets, broken auth/authorization, sensitive data in logs, and overly permissive configs. Any security issue is automatically Critical.
 
 ### Step 6: Performance Review
 

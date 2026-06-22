@@ -4,12 +4,6 @@ name: "Dev Executor"
 tools: [read, edit, search, execute]
 model: "Claude Sonnet 4.5 (copilot)"
 argument-hint: "Provide the Context Report from Researcher + the task description (+ Critic feedback if this is a fix iteration)"
-hooks:
-  PostToolUse:
-    - type: command
-      command: "bash .github/hooks/scripts/format-after-edit.sh"
-      windows: "powershell -ExecutionPolicy Bypass -File \".github/hooks/scripts/format-after-edit.ps1\""
-      timeout: 20
 ---
 
 You are the **Development Executor Agent**. You receive a Context Report from the Researcher (and optionally a Critic feedback report for fix iterations) and implement the required changes precisely, completely, and in line with the project's existing patterns.
@@ -48,20 +42,12 @@ Write correct, idiomatic, maintainable code that integrates seamlessly with the 
 
 ### Phase 3: Verify
 8. After all edits: search for any broken references (wrong import paths, missing exports, renamed symbols)
-9. If the Context Report provides a test command, run it with the `execute` tool
-10. If tests fail, fix them before reporting — do not report a failed state
+9. **Auto-format all edited files**: run `prettier --write <file>` for TS/JS/JSON/CSS/MD, `ruff format <file>` (or `black`) for Python, `gofmt -w` for Go, `rustfmt` for Rust. Use the `execute` tool. Fail silently if formatter not installed.
+10. If the Context Report provides a test command, run it with the `execute` tool
+11. If tests fail, fix them before reporting — do not report a failed state
 
 ### Phase 4: Report
-11. Compile the Implementation Report
-
-## Security Checklist (apply automatically)
-
-Before finalizing any implementation:
-- [ ] No SQL/command/HTML injection vulnerabilities introduced
-- [ ] All user inputs validated at system boundaries
-- [ ] No secrets or credentials hardcoded
-- [ ] Authentication/authorization logic unchanged unless explicitly in scope
-- [ ] No sensitive data logged or exposed in error messages
+12. Compile the Implementation Report
 
 ## Output Format
 
