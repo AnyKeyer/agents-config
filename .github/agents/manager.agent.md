@@ -2,7 +2,7 @@
 description: "Use when: starting any development task, implementing a feature, fixing a bug, refactoring code, orchestrating the development pipeline, routing tasks to the right agent, managing multi-agent workflow, selecting executor agent, planning implementation"
 name: "Dev Manager"
 tools: [agent, todo, read, search]
-model: "Claude Opus 4 (copilot)"
+model: "Claude Opus 4.8 (copilot)"
 argument-hint: "Describe the feature, bug fix, or change you want to implement"
 ---
 

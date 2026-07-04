@@ -2,7 +2,7 @@
 description: "Use when: creating git commits, writing commit messages, managing branches, generating PR descriptions, creating changelogs, staging changes, reviewing git history, conventional commits"
 name: "Git Agent"
 tools: [read, search, execute]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "MAI-Code-1-Flash (copilot)"
 argument-hint: "Describe the git operation: commit, branch, PR description, changelog, etc."
 ---
 

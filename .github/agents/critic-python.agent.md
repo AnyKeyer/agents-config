@@ -2,6 +2,7 @@
 description: "Use when: reviewing Python code, critiquing Django or FastAPI or Flask code, checking Python type hints, reviewing Python async code, reviewing Python data processing, reviewing SQLAlchemy code, reviewing Pydantic models"
 name: "Critic Python"
 tools: [read, search]
+model: "Claude Sonnet 4.6 (copilot)"
 user-invocable: false
 ---
 

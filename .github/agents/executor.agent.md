@@ -2,7 +2,7 @@
 description: "Use when: implementing code changes, applying a fix, writing new feature code, executing an implementation plan, making file edits based on a context report, creating new files, applying critic feedback"
 name: "Dev Executor"
 tools: [read, edit, search, execute]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "GPT-5.3-Codex (copilot)"
 argument-hint: "Provide the Context Report from Researcher + the task description (+ Critic feedback if this is a fix iteration)"
 ---
 

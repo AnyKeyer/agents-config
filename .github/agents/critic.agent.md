@@ -2,7 +2,7 @@
 description: "Use when: reviewing code changes, critiquing an implementation, code review, quality gate, verifying correctness of changes, finding bugs or issues in new code, evaluating if implementation meets requirements, selecting technology-specific reviewer"
 name: "Dev Critic"
 tools: [read, search, agent]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "Claude Sonnet 5 (copilot)"
 argument-hint: "Provide the Implementation Report + Context Report + original task description"
 ---
 

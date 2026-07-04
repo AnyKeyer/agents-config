@@ -2,7 +2,7 @@
 description: "Use when: generating documentation, creating README files, writing API docs, generating JSDoc or docstrings, creating architecture docs, documenting code on demand"
 name: "Doc Generator"
 tools: [read, search, edit]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "Claude Haiku 4.5 (copilot)"
 argument-hint: "Describe what to document: README, API docs, module docs, architecture overview"
 ---
 

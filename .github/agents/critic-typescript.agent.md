@@ -2,6 +2,7 @@
 description: "Use when: reviewing TypeScript code, JavaScript code, Node.js code, reviewing frontend code in TS/JS, critiquing TypeScript types, checking for type safety issues, reviewing React components in TypeScript, reviewing Express/NestJS/Next.js code"
 name: "Critic TypeScript"
 tools: [read, search]
+model: "Claude Sonnet 4.6 (copilot)"
 user-invocable: false
 ---
 

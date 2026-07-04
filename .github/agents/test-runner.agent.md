@@ -2,7 +2,7 @@
 description: "Use when: running tests, analyzing test failures, checking test coverage, debugging failing tests, running specific test suites, re-running flaky tests, test execution and analysis"
 name: "Test Runner"
 tools: [read, search, execute]
-model: "Claude Sonnet 4.5 (copilot)"
+model: "GPT-5.4 mini (copilot)"
 argument-hint: "Describe what to test: run all tests, specific file, specific test, analyze failures"
 ---
 

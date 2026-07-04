@@ -18,16 +18,16 @@ Exceptions (handle directly): answering questions · explaining code · `Git Age
 
 | Agent | Model | Role | User-invocable |
 |---|---|---|---|
-| Dev Manager | Opus 4 | Entry point, orchestrator | Yes |
-| Dev Researcher | Opus 4 | Context gatherer, maintains `project-memory.md` | Yes |
-| Dev Planner | Opus 4 | Context Report → ordered Implementation Plan | No |
-| Dev Executor | Sonnet 4.5 | Code implementer | Yes |
-| Dev Critic | Sonnet 4.5 | Quality gate, code reviewer | Yes |
-| Critic TypeScript | — | TS/JS specialist (Large, subagent only) | No |
-| Critic Python | — | Python specialist (Large, subagent only) | No |
-| Git Agent | Sonnet 4.5 | Commits, branches, PR descriptions | Yes |
-| Test Runner | Sonnet 4.5 | Test execution and failure analysis | Yes |
-| Doc Generator | Sonnet 4.5 | README, API docs | Yes |
+| Dev Manager | Claude Opus 4.8 | Entry point, orchestrator | Yes |
+| Dev Researcher | Claude Opus 4.6 | Context gatherer, maintains `project-memory.md` | Yes |
+| Dev Planner | Claude Opus 4.5 | Context Report → ordered Implementation Plan | No |
+| Dev Executor | GPT-5.3-Codex | Code implementer | Yes |
+| Dev Critic | Claude Sonnet 5 | Quality gate, code reviewer | Yes |
+| Critic TypeScript | Claude Sonnet 4.6 | TS/JS specialist (Large, subagent only) | No |
+| Critic Python | Claude Sonnet 4.6 | Python specialist (Large, subagent only) | No |
+| Git Agent | MAI-Code-1-Flash | Commits, branches, PR descriptions | Yes |
+| Test Runner | GPT-5.4 mini | Test execution and failure analysis | Yes |
+| Doc Generator | Claude Haiku 4.5 | README, API docs | Yes |
 
 ## Agent Reports
 Pass verbatim between agents — never truncate:
